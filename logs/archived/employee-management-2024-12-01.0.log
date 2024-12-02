@@ -1,0 +1,31 @@
+2024-12-01 18:42:01.883 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-01 18:42:02.010 [main] INFO  c.e.e.EmployeeManagementApplication - Starting EmployeeManagementApplication using Java 17.0.13 with PID 16412 (D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main started by P1357905 in D:\java-spingboot-projects\employee-management\employee-management)
+2024-12-01 18:42:02.014 [main] DEBUG c.e.e.EmployeeManagementApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-12-01 18:42:02.016 [main] INFO  c.e.e.EmployeeManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-01 18:42:04.673 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-01 18:42:04.821 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 129 ms. Found 1 JPA repository interfaces.
+2024-12-01 18:42:05.846 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-12-01 18:42:05.862 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-01 18:42:05.867 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-01 18:42:05.867 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-12-01 18:42:06.155 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-01 18:42:06.155 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4026 ms
+2024-12-01 18:42:06.406 [main] DEBUG c.e.e.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2024-12-01 18:42:06.741 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-01 18:42:06.927 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-12-01 18:42:06.935 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-12-01 18:42:08.253 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-01 18:42:08.346 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-01 18:42:09.106 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1934339
+2024-12-01 18:42:09.110 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-01 18:42:09.223 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-01 18:42:11.850 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-01 18:42:12.020 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-01 18:42:13.344 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-01 18:42:14.196 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@33986be7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@748fa354, org.springframework.security.web.context.SecurityContextHolderFilter@5b49b1df, org.springframework.security.web.header.HeaderWriterFilter@61c4fc34, org.springframework.security.web.authentication.logout.LogoutFilter@64e247e, com.example.employee_management.security.JwtAuthFilter@9ab310b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c24639e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@689ea211, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78e59b04, org.springframework.security.web.session.SessionManagementFilter@54cce500, org.springframework.security.web.access.ExceptionTranslationFilter@1c15a6aa, org.springframework.security.web.access.intercept.AuthorizationFilter@74267ece]
+2024-12-01 18:42:14.829 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-01 18:42:14.888 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-12-01 18:42:14.914 [main] INFO  c.e.e.EmployeeManagementApplication - Started EmployeeManagementApplication in 14.278 seconds (process running for 23.509)
+2024-12-01 18:48:07.321 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m3s478ms671µs200ns).
+2024-12-01 19:15:03.384 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s630ms376µs700ns).
+2024-12-01 23:44:23.953 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h36m18s712ms618µs).

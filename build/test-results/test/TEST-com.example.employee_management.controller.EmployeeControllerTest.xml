@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.employee_management.controller.EmployeeControllerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-11-28T09:32:39" hostname="NCSIN014WSRG3C0" time="0.559">
+  <properties/>
+  <testcase name="loginEmployee_Failure()" classname="com.example.employee_management.controller.EmployeeControllerTest" time="0.46"/>
+  <testcase name="getEmployeeById_Success()" classname="com.example.employee_management.controller.EmployeeControllerTest" time="0.044"/>
+  <testcase name="getAllEmployees_Success()" classname="com.example.employee_management.controller.EmployeeControllerTest" time="0.009"/>
+  <testcase name="deleteEmployee_Success()" classname="com.example.employee_management.controller.EmployeeControllerTest" time="0.016"/>
+  <testcase name="updateEmployee_Success()" classname="com.example.employee_management.controller.EmployeeControllerTest" time="0.007"/>
+  <testcase name="loginEmployee_Success()" classname="com.example.employee_management.controller.EmployeeControllerTest" time="0.009"/>
+  <testcase name="createEmployee_Success()" classname="com.example.employee_management.controller.EmployeeControllerTest" time="0.005"/>
+  <system-out><![CDATA[2024-11-28 15:02:39.475 [Test worker] INFO  c.e.e.controller.EmployeeController - Login attempt for email: john@example.com
+2024-11-28 15:02:39.485 [Test worker] ERROR c.e.e.controller.EmployeeController - Login failed for email: john@example.com. Reason: Invalid credentials
+2024-11-28 15:02:39.540 [Test worker] INFO  c.e.e.controller.EmployeeController - Fetching employee details for ID: 1
+2024-11-28 15:02:39.550 [Test worker] INFO  c.e.e.controller.EmployeeController - Successfully retrieved employee details for ID: 1
+2024-11-28 15:02:39.579 [Test worker] INFO  c.e.e.controller.EmployeeController - Fetching all employees
+2024-11-28 15:02:39.581 [Test worker] INFO  c.e.e.controller.EmployeeController - Successfully retrieved 1 employees
+2024-11-28 15:02:39.593 [Test worker] INFO  c.e.e.controller.EmployeeController - Deleting employee with ID: 1
+2024-11-28 15:02:39.593 [Test worker] INFO  c.e.e.controller.EmployeeController - Successfully deleted employee with ID: 1
+2024-11-28 15:02:39.603 [Test worker] INFO  c.e.e.controller.EmployeeController - Updating employee with ID: 1
+2024-11-28 15:02:39.608 [Test worker] INFO  c.e.e.controller.EmployeeController - Successfully updated employee with ID: 1
+2024-11-28 15:02:39.617 [Test worker] INFO  c.e.e.controller.EmployeeController - Login attempt for email: john@example.com
+2024-11-28 15:02:39.618 [Test worker] INFO  c.e.e.controller.EmployeeController - Successful login for email: john@example.com
+2024-11-28 15:02:39.624 [Test worker] INFO  c.e.e.controller.EmployeeController - Received request to create employee with email: john@example.com
+2024-11-28 15:02:39.624 [Test worker] INFO  c.e.e.controller.EmployeeController - Successfully created employee with ID: 1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

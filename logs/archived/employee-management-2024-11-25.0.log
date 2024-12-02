@@ -1,0 +1,687 @@
+2024-11-25 00:50:22.340 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-25 00:50:22.390 [main] INFO  c.e.e.EmployeeManagementApplication - Starting EmployeeManagementApplication using Java 17.0.13 with PID 7712 (D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main started by P1357905 in D:\java-spingboot-projects\employee-management\employee-management)
+2024-11-25 00:50:22.391 [main] DEBUG c.e.e.EmployeeManagementApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-11-25 00:50:22.392 [main] INFO  c.e.e.EmployeeManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-25 00:50:23.134 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25 00:50:23.181 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2024-11-25 00:50:23.690 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-11-25 00:50:23.696 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-25 00:50:23.698 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-25 00:50:23.698 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-11-25 00:50:23.791 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-25 00:50:23.792 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1359 ms
+2024-11-25 00:50:23.923 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25 00:50:23.980 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-11-25 00:50:23.983 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-11-25 00:50:24.349 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25 00:50:24.373 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-25 00:50:24.571 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@76b305e1
+2024-11-25 00:50:24.573 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-25 00:50:24.605 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-25 00:50:25.666 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25 00:50:25.726 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 00:50:26.216 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25 00:50:26.329 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39a03ccc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4db45d, org.springframework.security.web.context.SecurityContextHolderFilter@260f05ee, org.springframework.security.web.header.HeaderWriterFilter@63541cd4, org.springframework.security.web.authentication.logout.LogoutFilter@5f3c866c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4afdb05e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d529bc0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@89178b4, org.springframework.security.web.access.ExceptionTranslationFilter@5ce0f50a, org.springframework.security.web.access.intercept.AuthorizationFilter@600b3bee]
+2024-11-25 00:50:26.674 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-25 00:50:26.695 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-25 00:50:26.703 [main] INFO  c.e.e.EmployeeManagementApplication - Started EmployeeManagementApplication in 4.837 seconds (process running for 5.485)
+2024-11-25 00:53:32.216 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25 00:53:32.216 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-25 00:53:32.217 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-11-25 00:53:32.229 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/login
+2024-11-25 00:53:32.238 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/login
+2024-11-25 00:53:32.435 [http-nio-8080-exec-1] INFO  c.e.e.controller.EmployeeController - Login attempt for email: string1.com
+2024-11-25 00:53:32.785 [http-nio-8080-exec-1] INFO  c.e.e.controller.EmployeeController - Successful login for email: string1.com
+2024-11-25 00:53:32.827 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 00:53:41.118 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/login
+2024-11-25 00:53:41.118 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/login
+2024-11-25 00:53:41.119 [http-nio-8080-exec-2] INFO  c.e.e.controller.EmployeeController - Login attempt for email: string1.co
+2024-11-25 00:53:41.123 [http-nio-8080-exec-2] ERROR c.e.e.controller.EmployeeController - Login failed for email: string1.co. Reason: Employee not found with provided email
+2024-11-25 00:53:41.124 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:15:56.593 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 01:15:56.595 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-25 01:15:56.598 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-25 01:16:03.788 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-25 01:16:03.834 [main] INFO  c.e.e.EmployeeManagementApplication - Starting EmployeeManagementApplication using Java 17.0.13 with PID 21416 (D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main started by P1357905 in D:\java-spingboot-projects\employee-management\employee-management)
+2024-11-25 01:16:03.835 [main] DEBUG c.e.e.EmployeeManagementApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-11-25 01:16:03.835 [main] INFO  c.e.e.EmployeeManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-25 01:16:04.584 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25 01:16:04.637 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+2024-11-25 01:16:05.238 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-11-25 01:16:05.248 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-25 01:16:05.251 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-25 01:16:05.252 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-11-25 01:16:05.404 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-25 01:16:05.405 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1533 ms
+2024-11-25 01:16:05.445 [main] ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main\com\example\employee_management\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'securityConfig' defined in file [D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main\com\example\employee_management\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtAuthenticationFilter': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-11-25 01:16:05.483 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-11-25 01:16:05.498 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-11-25 01:16:05.512 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-25 01:16:05.546 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  jwtAuthenticationFilter defined in file [D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main\com\example\employee_management\security\JwtAuthenticationFilter.class]
+↑     ↓
+|  securityConfig defined in file [D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main\com\example\employee_management\config\SecurityConfig.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2024-11-25 01:22:04.708 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-25 01:22:04.769 [main] INFO  c.e.e.EmployeeManagementApplication - Starting EmployeeManagementApplication using Java 17.0.13 with PID 204 (D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main started by P1357905 in D:\java-spingboot-projects\employee-management\employee-management)
+2024-11-25 01:22:04.770 [main] DEBUG c.e.e.EmployeeManagementApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-11-25 01:22:04.770 [main] INFO  c.e.e.EmployeeManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-25 01:22:05.482 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25 01:22:05.527 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2024-11-25 01:22:05.957 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-11-25 01:22:05.963 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-25 01:22:05.964 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-25 01:22:05.965 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-11-25 01:22:06.049 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-25 01:22:06.050 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1234 ms
+2024-11-25 01:22:06.148 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25 01:22:06.210 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-11-25 01:22:06.214 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-11-25 01:22:06.483 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25 01:22:06.508 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-25 01:22:06.684 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4be12f6c
+2024-11-25 01:22:06.686 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-25 01:22:06.719 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-25 01:22:07.784 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25 01:22:07.862 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 01:22:08.267 [main] ERROR o.s.b.w.e.tomcat.TomcatStarter - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationFilter' defined in file [D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main\com\example\employee_management\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'securityConfig' defined in file [D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main\com\example\employee_management\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'userDetailsService': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2024-11-25 01:22:08.302 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-11-25 01:22:08.305 [main] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.13/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.13/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.13/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1679)
+ java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.13/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+2024-11-25 01:22:08.307 [main] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-1 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.13/sun.nio.ch.Net.poll(Native Method)
+ java.base@17.0.13/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:186)
+ java.base@17.0.13/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:290)
+ java.base@17.0.13/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:314)
+ java.base@17.0.13/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+ java.base@17.0.13/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+ java.base@17.0.13/java.net.Socket$SocketInputStream.read(Socket.java:966)
+ app//org.postgresql.core.VisibleBufferedInputStream.readMore(VisibleBufferedInputStream.java:161)
+ app//org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:128)
+ app//org.postgresql.core.VisibleBufferedInputStream.ensureBytes(VisibleBufferedInputStream.java:113)
+ app//org.postgresql.core.VisibleBufferedInputStream.read(VisibleBufferedInputStream.java:73)
+ app//org.postgresql.core.PGStream.receiveChar(PGStream.java:465)
+ app//org.postgresql.core.v3.ConnectionFactoryImpl.enableSSL(ConnectionFactoryImpl.java:589)
+ app//org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:191)
+ app//org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+ app//org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+ app//org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+ app//org.postgresql.Driver.makeConnection(Driver.java:443)
+ app//org.postgresql.Driver.connect(Driver.java:297)
+ app//com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+ app//com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+ app//com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+ app//com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+ app//com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:733)
+ app//com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+ java.base@17.0.13/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+ java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@17.0.13/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.13/java.lang.Thread.run(Thread.java:840)
+2024-11-25 01:22:08.310 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2024-11-25 01:22:08.310 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 01:22:08.319 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-25 01:22:08.410 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-25 01:22:08.419 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-25 01:22:08.439 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:610)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:738)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:440)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.employee_management.EmployeeManagementApplication.main(EmployeeManagementApplication.java:13)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:489)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:211)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:183)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationFilter' defined in file [D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main\com\example\employee_management\security\JwtAuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'securityConfig' defined in file [D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main\com\example\employee_management\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'userDetailsService': Requested bean is currently in creation: Is there an unresolvable circular reference?
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:210)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:173)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:168)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:153)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:235)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4850)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:845)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1332)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1322)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:866)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:240)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:433)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:917)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:488)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfig' defined in file [D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main\com\example\employee_management\config\SecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'userDetailsService': Requested bean is currently in creation: Is there an unresolvable circular reference?
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:412)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1162)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:560)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:910)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 54 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'userDetailsService': Requested bean is currently in creation: Is there an unresolvable circular reference?
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.beforeSingletonCreation(DefaultSingletonBeanRegistry.java:355)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:227)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:910)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 77 common frames omitted
+2024-11-25 01:30:45.171 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-25 01:30:45.220 [main] INFO  c.e.e.EmployeeManagementApplication - Starting EmployeeManagementApplication using Java 17.0.13 with PID 22660 (D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main started by P1357905 in D:\java-spingboot-projects\employee-management\employee-management)
+2024-11-25 01:30:45.221 [main] DEBUG c.e.e.EmployeeManagementApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-11-25 01:30:45.221 [main] INFO  c.e.e.EmployeeManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-25 01:30:45.947 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25 01:30:46.023 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 1 JPA repository interfaces.
+2024-11-25 01:30:46.644 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-11-25 01:30:46.651 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-25 01:30:46.653 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-25 01:30:46.653 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-11-25 01:30:46.760 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-25 01:30:46.761 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1503 ms
+2024-11-25 01:30:46.820 [main] DEBUG c.e.e.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2024-11-25 01:30:46.932 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25 01:30:46.982 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-11-25 01:30:46.984 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-11-25 01:30:47.298 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25 01:30:47.330 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-25 01:30:47.545 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@71ad959b
+2024-11-25 01:30:47.547 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-25 01:30:47.583 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-25 01:30:48.781 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25 01:30:48.882 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 01:30:49.616 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25 01:30:49.944 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b60be3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f3565c0, org.springframework.security.web.context.SecurityContextHolderFilter@309b8144, org.springframework.security.web.header.HeaderWriterFilter@463746eb, org.springframework.security.web.authentication.logout.LogoutFilter@155767a7, com.example.employee_management.security.JwtAuthFilter@1a1ccaaf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@321558f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@222dc36c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64a8851a, org.springframework.security.web.session.SessionManagementFilter@238c63df, org.springframework.security.web.access.ExceptionTranslationFilter@28ffa527, org.springframework.security.web.access.intercept.AuthorizationFilter@37a36194]
+2024-11-25 01:30:50.215 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-25 01:30:50.250 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-25 01:30:50.266 [main] INFO  c.e.e.EmployeeManagementApplication - Started EmployeeManagementApplication in 5.536 seconds (process running for 6.153)
+2024-11-25 01:31:47.944 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25 01:31:47.945 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-25 01:31:47.946 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-11-25 01:31:47.952 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/login
+2024-11-25 01:31:47.960 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:31:47.969 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/login
+2024-11-25 01:31:48.075 [http-nio-8080-exec-1] INFO  c.e.e.controller.EmployeeController - Login attempt for email: string1.com
+2024-11-25 01:31:48.322 [http-nio-8080-exec-1] INFO  c.e.e.controller.EmployeeController - Successful login for email: string1.com
+2024-11-25 01:33:09.317 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees/4
+2024-11-25 01:33:09.318 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:33:09.320 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:33:09.324 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-11-25 01:33:09.327 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:33:09.327 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:34:09.733 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees/login
+2024-11-25 01:34:09.733 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:34:09.734 [http-nio-8080-exec-5] DEBUG o.s.s.w.s.SessionManagementFilter - Request requested invalid session id 4182200390D13C4E9B0FD1599ECE6DD2
+2024-11-25 01:34:09.734 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/employees/login
+2024-11-25 01:34:53.896 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees/4
+2024-11-25 01:34:53.897 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:34:53.897 [http-nio-8080-exec-8] DEBUG o.s.s.w.s.SessionManagementFilter - Request requested invalid session id 4182200390D13C4E9B0FD1599ECE6DD2
+2024-11-25 01:34:53.898 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:34:53.898 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-11-25 01:34:53.899 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:34:53.899 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:35:04.089 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees/4
+2024-11-25 01:35:04.123 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/employees/4
+2024-11-25 01:35:04.124 [http-nio-8080-exec-9] INFO  c.e.e.controller.EmployeeController - Fetching employee details for ID: 4
+2024-11-25 01:35:04.141 [http-nio-8080-exec-9] INFO  c.e.e.controller.EmployeeController - Successfully retrieved employee details for ID: 4
+2024-11-25 01:37:12.010 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 01:37:12.012 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-25 01:37:12.015 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-25 01:37:18.012 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-25 01:37:18.064 [main] INFO  c.e.e.EmployeeManagementApplication - Starting EmployeeManagementApplication using Java 17.0.13 with PID 13232 (D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main started by P1357905 in D:\java-spingboot-projects\employee-management\employee-management)
+2024-11-25 01:37:18.064 [main] DEBUG c.e.e.EmployeeManagementApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-11-25 01:37:18.065 [main] INFO  c.e.e.EmployeeManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-25 01:37:18.799 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25 01:37:18.852 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2024-11-25 01:37:19.323 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-11-25 01:37:19.330 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-25 01:37:19.331 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-25 01:37:19.332 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-11-25 01:37:19.420 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-25 01:37:19.421 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1316 ms
+2024-11-25 01:37:19.475 [main] DEBUG c.e.e.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2024-11-25 01:37:19.570 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25 01:37:19.620 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-11-25 01:37:19.622 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-11-25 01:37:19.892 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25 01:37:19.916 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-25 01:37:20.111 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@25109608
+2024-11-25 01:37:20.113 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-25 01:37:20.143 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-25 01:37:21.085 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25 01:37:21.139 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 01:37:21.657 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25 01:37:21.961 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@609edb55, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@147892be, org.springframework.security.web.context.SecurityContextHolderFilter@28effa3f, org.springframework.security.web.header.HeaderWriterFilter@6d514259, org.springframework.security.web.authentication.logout.LogoutFilter@34074149, com.example.employee_management.security.JwtAuthFilter@9b47400, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2db4a84a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73158d35, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13d1653, org.springframework.security.web.session.SessionManagementFilter@254210b1, org.springframework.security.web.access.ExceptionTranslationFilter@27b84c9a, org.springframework.security.web.access.intercept.AuthorizationFilter@29ebaf2f]
+2024-11-25 01:37:22.187 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-25 01:37:22.210 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-25 01:37:22.220 [main] INFO  c.e.e.EmployeeManagementApplication - Started EmployeeManagementApplication in 4.647 seconds (process running for 5.304)
+2024-11-25 01:38:01.468 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25 01:38:01.469 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-25 01:38:01.471 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-11-25 01:38:01.490 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/index.html
+2024-11-25 01:38:01.502 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:38:01.514 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/index.html
+2024-11-25 01:38:01.575 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui.css
+2024-11-25 01:38:01.575 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/index.css
+2024-11-25 01:38:01.575 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2024-11-25 01:38:01.575 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:38:01.575 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:38:01.575 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-bundle.js
+2024-11-25 01:38:01.575 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:38:01.575 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-initializer.js
+2024-11-25 01:38:01.575 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:38:01.575 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:38:01.576 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-bundle.js
+2024-11-25 01:38:01.576 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/index.css
+2024-11-25 01:38:01.576 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2024-11-25 01:38:01.577 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui.css
+2024-11-25 01:38:01.577 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-initializer.js
+2024-11-25 01:38:01.714 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/swagger-config
+2024-11-25 01:38:01.714 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:38:01.715 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/favicon-32x32.png
+2024-11-25 01:38:01.715 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:38:01.718 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/favicon-32x32.png
+2024-11-25 01:38:01.718 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/swagger-config
+2024-11-25 01:38:01.764 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs
+2024-11-25 01:38:01.765 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:38:01.767 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs
+2024-11-25 01:38:02.186 [http-nio-8080-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 404 ms
+2024-11-25 01:38:55.737 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees/4
+2024-11-25 01:38:55.765 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:38:55.767 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:38:55.774 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-11-25 01:38:55.778 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:38:55.779 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:39:22.345 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees/5
+2024-11-25 01:39:22.348 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:39:22.350 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:39:22.351 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-11-25 01:39:22.353 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:39:22.354 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:40:06.602 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees/5
+2024-11-25 01:40:06.621 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:40:06.623 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:40:06.623 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-11-25 01:40:06.624 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:40:06.624 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:40:49.470 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees
+2024-11-25 01:40:49.473 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:40:49.473 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:40:49.474 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-11-25 01:40:49.475 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:40:49.475 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:40:51.970 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees
+2024-11-25 01:40:51.975 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:40:51.976 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:40:51.977 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-11-25 01:40:51.979 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:40:51.979 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:41:10.378 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/index.html
+2024-11-25 01:41:10.379 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:41:10.381 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/index.html
+2024-11-25 01:41:10.398 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui.css
+2024-11-25 01:41:10.398 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:41:10.399 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui.css
+2024-11-25 01:41:10.402 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/index.css
+2024-11-25 01:41:10.403 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-initializer.js
+2024-11-25 01:41:10.403 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2024-11-25 01:41:10.403 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:41:10.403 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:41:10.403 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:41:10.403 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-bundle.js
+2024-11-25 01:41:10.404 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-initializer.js
+2024-11-25 01:41:10.404 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:41:10.405 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/index.css
+2024-11-25 01:41:10.405 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-bundle.js
+2024-11-25 01:41:10.404 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2024-11-25 01:41:10.538 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/swagger-config
+2024-11-25 01:41:10.538 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/favicon-32x32.png
+2024-11-25 01:41:10.538 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:41:10.538 [http-nio-8080-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:41:10.538 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/swagger-config
+2024-11-25 01:41:10.539 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/favicon-32x32.png
+2024-11-25 01:41:10.556 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs
+2024-11-25 01:41:10.557 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:41:10.558 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs
+2024-11-25 01:41:10.562 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/favicon-32x32.png
+2024-11-25 01:41:10.563 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:41:10.564 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/favicon-32x32.png
+2024-11-25 01:41:38.594 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/login
+2024-11-25 01:41:38.595 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:41:38.595 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/login
+2024-11-25 01:41:38.645 [http-nio-8080-exec-9] INFO  c.e.e.controller.EmployeeController - Login attempt for email: string.com
+2024-11-25 01:41:38.815 [http-nio-8080-exec-9] WARN  o.s.s.c.bcrypt.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2024-11-25 01:41:38.815 [http-nio-8080-exec-9] ERROR c.e.e.controller.EmployeeController - Login failed for email: string.com. Reason: Invalid password
+2024-11-25 01:41:53.054 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/login
+2024-11-25 01:41:53.056 [http-nio-8080-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:41:53.056 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/login
+2024-11-25 01:41:53.058 [http-nio-8080-exec-10] INFO  c.e.e.controller.EmployeeController - Login attempt for email: string.com
+2024-11-25 01:41:53.062 [http-nio-8080-exec-10] WARN  o.s.s.c.bcrypt.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2024-11-25 01:41:53.062 [http-nio-8080-exec-10] ERROR c.e.e.controller.EmployeeController - Login failed for email: string.com. Reason: Invalid password
+2024-11-25 01:42:03.339 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/login
+2024-11-25 01:42:03.339 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:42:03.340 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/login
+2024-11-25 01:42:03.342 [http-nio-8080-exec-1] INFO  c.e.e.controller.EmployeeController - Login attempt for email: string.com
+2024-11-25 01:42:03.344 [http-nio-8080-exec-1] WARN  o.s.s.c.bcrypt.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2024-11-25 01:42:03.344 [http-nio-8080-exec-1] ERROR c.e.e.controller.EmployeeController - Login failed for email: string.com. Reason: Invalid password
+2024-11-25 01:42:06.551 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/login
+2024-11-25 01:42:06.551 [http-nio-8080-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:42:06.552 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/login
+2024-11-25 01:42:06.552 [http-nio-8080-exec-5] INFO  c.e.e.controller.EmployeeController - Login attempt for email: string.com
+2024-11-25 01:42:06.558 [http-nio-8080-exec-5] WARN  o.s.s.c.bcrypt.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2024-11-25 01:42:06.558 [http-nio-8080-exec-5] ERROR c.e.e.controller.EmployeeController - Login failed for email: string.com. Reason: Invalid password
+2024-11-25 01:42:30.578 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/register
+2024-11-25 01:42:30.579 [http-nio-8080-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:42:30.580 [http-nio-8080-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/register
+2024-11-25 01:42:30.586 [http-nio-8080-exec-8] INFO  c.e.e.controller.EmployeeController - Received request to create employee with email: string1.com
+2024-11-25 01:42:41.216 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/register
+2024-11-25 01:42:41.216 [http-nio-8080-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:42:41.217 [http-nio-8080-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/register
+2024-11-25 01:42:41.217 [http-nio-8080-exec-7] INFO  c.e.e.controller.EmployeeController - Received request to create employee with email: string2.com
+2024-11-25 01:42:41.406 [http-nio-8080-exec-7] INFO  c.e.e.controller.EmployeeController - Successfully created employee with ID: 8
+2024-11-25 01:43:21.871 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/login
+2024-11-25 01:43:21.871 [http-nio-8080-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:43:21.872 [http-nio-8080-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/login
+2024-11-25 01:43:21.873 [http-nio-8080-exec-9] INFO  c.e.e.controller.EmployeeController - Login attempt for email: string2.com
+2024-11-25 01:43:22.006 [http-nio-8080-exec-9] INFO  c.e.e.controller.EmployeeController - Successful login for email: string2.com
+2024-11-25 01:43:58.025 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees/8
+2024-11-25 01:43:58.031 [http-nio-8080-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/employees/8
+2024-11-25 01:43:58.032 [http-nio-8080-exec-10] INFO  c.e.e.controller.EmployeeController - Fetching employee details for ID: 8
+2024-11-25 01:43:58.047 [http-nio-8080-exec-10] INFO  c.e.e.controller.EmployeeController - Successfully retrieved employee details for ID: 8
+2024-11-25 01:44:27.208 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees/8
+2024-11-25 01:44:27.212 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:44:27.217 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:44:27.218 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2024-11-25 01:44:27.219 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 01:44:27.219 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2024-11-25 01:45:09.013 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees/7
+2024-11-25 01:45:09.017 [http-nio-8080-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/employees/7
+2024-11-25 01:45:09.018 [http-nio-8080-exec-5] INFO  c.e.e.controller.EmployeeController - Fetching employee details for ID: 7
+2024-11-25 01:45:09.022 [http-nio-8080-exec-5] INFO  c.e.e.controller.EmployeeController - Successfully retrieved employee details for ID: 7
+2024-11-25 01:45:22.149 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees/6
+2024-11-25 01:45:22.154 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/employees/6
+2024-11-25 01:45:22.155 [http-nio-8080-exec-3] INFO  c.e.e.controller.EmployeeController - Fetching employee details for ID: 6
+2024-11-25 01:45:22.158 [http-nio-8080-exec-3] INFO  c.e.e.controller.EmployeeController - Successfully retrieved employee details for ID: 6
+2024-11-25 01:45:37.613 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees/5
+2024-11-25 01:45:37.618 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/employees/5
+2024-11-25 01:45:37.619 [http-nio-8080-exec-2] INFO  c.e.e.controller.EmployeeController - Fetching employee details for ID: 5
+2024-11-25 01:45:37.622 [http-nio-8080-exec-2] INFO  c.e.e.controller.EmployeeController - Successfully retrieved employee details for ID: 5
+2024-11-25 01:45:45.691 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees/4
+2024-11-25 01:45:45.697 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/employees/4
+2024-11-25 01:45:45.698 [http-nio-8080-exec-4] INFO  c.e.e.controller.EmployeeController - Fetching employee details for ID: 4
+2024-11-25 01:45:45.703 [http-nio-8080-exec-4] INFO  c.e.e.controller.EmployeeController - Successfully retrieved employee details for ID: 4
+2024-11-25 01:49:05.328 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 01:49:05.331 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-25 01:49:05.335 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-25 01:49:10.469 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-25 01:49:10.510 [main] INFO  c.e.e.EmployeeManagementApplication - Starting EmployeeManagementApplication using Java 17.0.13 with PID 23344 (D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main started by P1357905 in D:\java-spingboot-projects\employee-management\employee-management)
+2024-11-25 01:49:10.510 [main] DEBUG c.e.e.EmployeeManagementApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-11-25 01:49:10.511 [main] INFO  c.e.e.EmployeeManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-25 01:49:11.183 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25 01:49:11.231 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2024-11-25 01:49:11.659 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-11-25 01:49:11.666 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-25 01:49:11.668 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-25 01:49:11.668 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-11-25 01:49:11.752 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-25 01:49:11.753 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1205 ms
+2024-11-25 01:49:11.807 [main] DEBUG c.e.e.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2024-11-25 01:49:11.890 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25 01:49:11.938 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-11-25 01:49:11.940 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-11-25 01:49:12.200 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25 01:49:12.224 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-25 01:49:12.423 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7b5833ee
+2024-11-25 01:49:12.425 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-25 01:49:12.457 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-25 01:49:13.375 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25 01:49:13.445 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 01:49:13.937 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25 01:49:14.188 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2f3565c0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64a8851a, org.springframework.security.web.context.SecurityContextHolderFilter@70c99e13, org.springframework.security.web.header.HeaderWriterFilter@54d9b23a, org.springframework.security.web.authentication.logout.LogoutFilter@5418a659, com.example.employee_management.security.JwtAuthFilter@2e71240b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a9f8c2f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3445ddf2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b27d03d, org.springframework.security.web.session.SessionManagementFilter@192b76a4, org.springframework.security.web.access.ExceptionTranslationFilter@372e972d, org.springframework.security.web.access.intercept.AuthorizationFilter@1d0acb8f]
+2024-11-25 01:49:14.394 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-25 01:49:14.415 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-25 01:49:14.424 [main] INFO  c.e.e.EmployeeManagementApplication - Started EmployeeManagementApplication in 4.38 seconds (process running for 5.006)
+2024-11-25 02:19:56.011 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m43s194ms151µs500ns).
+2024-11-25 03:18:53.522 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=58m57s511ms117µs900ns).
+2024-11-25 03:22:41.115 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m47s597ms229µs900ns).
+2024-11-25 09:16:36.697 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h30m25s295ms186µs500ns).
+2024-11-25 09:19:38.206 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m31s490ms294µs300ns).
+2024-11-25 09:20:32.758 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s551ms943µs200ns).
+2024-11-25 09:36:52.153 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 09:36:52.156 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-25 09:36:52.164 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-25 09:37:31.757 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-25 09:37:31.803 [main] INFO  c.e.e.EmployeeManagementApplication - Starting EmployeeManagementApplication using Java 17.0.13 with PID 25712 (D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main started by P1357905 in D:\java-spingboot-projects\employee-management\employee-management)
+2024-11-25 09:37:31.803 [main] DEBUG c.e.e.EmployeeManagementApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-11-25 09:37:31.809 [main] INFO  c.e.e.EmployeeManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-25 09:37:32.552 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25 09:37:32.598 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 1 JPA repository interfaces.
+2024-11-25 09:37:33.057 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-11-25 09:37:33.065 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-25 09:37:33.069 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-25 09:37:33.069 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-11-25 09:37:33.179 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-25 09:37:33.179 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1314 ms
+2024-11-25 09:37:33.230 [main] DEBUG c.e.e.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2024-11-25 09:37:33.318 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25 09:37:33.365 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-11-25 09:37:33.367 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-11-25 09:37:33.656 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25 09:37:33.690 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-25 09:37:33.874 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58cda03f
+2024-11-25 09:37:33.876 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-25 09:37:33.904 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-25 09:37:34.836 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25 09:37:34.910 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 09:37:35.441 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25 09:37:35.685 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e30a8ef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ffaa711, org.springframework.security.web.context.SecurityContextHolderFilter@6d514259, org.springframework.security.web.header.HeaderWriterFilter@18ed9480, org.springframework.security.web.authentication.logout.LogoutFilter@1d0acb8f, com.example.employee_management.security.JwtAuthFilter@5934153e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12d8e6b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@255482cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3abb6aa, org.springframework.security.web.session.SessionManagementFilter@3445ddf2, org.springframework.security.web.access.ExceptionTranslationFilter@6de2344a, org.springframework.security.web.access.intercept.AuthorizationFilter@29811d4d]
+2024-11-25 09:37:35.880 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-25 09:37:35.901 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-25 09:37:35.909 [main] INFO  c.e.e.EmployeeManagementApplication - Started EmployeeManagementApplication in 4.698 seconds (process running for 5.435)
+2024-11-25 09:39:10.381 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25 09:39:10.381 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-25 09:39:10.382 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-11-25 09:39:10.391 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/login
+2024-11-25 09:39:10.473 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 09:39:10.491 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/login
+2024-11-25 09:39:10.626 [http-nio-8080-exec-1] INFO  c.e.e.controller.EmployeeController - Login attempt for email: ankit@example.com
+2024-11-25 09:39:10.781 [http-nio-8080-exec-1] WARN  o.s.s.c.bcrypt.BCryptPasswordEncoder - Encoded password does not look like BCrypt
+2024-11-25 09:39:10.781 [http-nio-8080-exec-1] ERROR c.e.e.controller.EmployeeController - Login failed for email: ankit@example.com. Reason: Invalid password
+2024-11-25 09:41:45.174 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/register
+2024-11-25 09:41:45.180 [http-nio-8080-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 09:41:45.181 [http-nio-8080-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/register
+2024-11-25 09:41:45.185 [http-nio-8080-exec-3] INFO  c.e.e.controller.EmployeeController - Received request to create employee with email: seema@example.com
+2024-11-25 09:41:45.432 [http-nio-8080-exec-3] INFO  c.e.e.controller.EmployeeController - Successfully created employee with ID: 9
+2024-11-25 09:42:31.058 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/login
+2024-11-25 09:42:31.062 [http-nio-8080-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 09:42:31.063 [http-nio-8080-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/login
+2024-11-25 09:42:31.064 [http-nio-8080-exec-4] INFO  c.e.e.controller.EmployeeController - Login attempt for email: seema@example.com
+2024-11-25 09:42:31.200 [http-nio-8080-exec-4] INFO  c.e.e.controller.EmployeeController - Successful login for email: seema@example.com
+2024-11-25 09:43:58.951 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /api/employees/9
+2024-11-25 09:43:58.957 [http-nio-8080-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /api/employees/9
+2024-11-25 09:43:58.957 [http-nio-8080-exec-6] INFO  c.e.e.controller.EmployeeController - Fetching employee details for ID: 9
+2024-11-25 09:43:58.974 [http-nio-8080-exec-6] INFO  c.e.e.controller.EmployeeController - Successfully retrieved employee details for ID: 9
+2024-11-25 10:44:19.860 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 10:44:19.863 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-25 10:44:19.877 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-25 10:44:32.430 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-25 10:44:32.473 [main] INFO  c.e.e.EmployeeManagementApplication - Starting EmployeeManagementApplication using Java 17.0.13 with PID 25048 (D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main started by P1357905 in D:\java-spingboot-projects\employee-management\employee-management)
+2024-11-25 10:44:32.473 [main] DEBUG c.e.e.EmployeeManagementApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-11-25 10:44:32.474 [main] INFO  c.e.e.EmployeeManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-25 10:44:33.130 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25 10:44:33.183 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2024-11-25 10:44:33.601 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-11-25 10:44:33.606 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-25 10:44:33.608 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-25 10:44:33.608 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-11-25 10:44:33.689 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-25 10:44:33.690 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1177 ms
+2024-11-25 10:44:33.742 [main] DEBUG c.e.e.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2024-11-25 10:44:33.826 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25 10:44:33.874 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-11-25 10:44:33.875 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-11-25 10:44:34.134 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25 10:44:34.157 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-25 10:44:34.351 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e521067
+2024-11-25 10:44:34.353 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-25 10:44:34.383 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-25 10:44:35.323 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25 10:44:35.388 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 10:44:35.805 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25 10:44:36.047 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34074149, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f7bf0f6, org.springframework.security.web.context.SecurityContextHolderFilter@6d911985, org.springframework.security.web.header.HeaderWriterFilter@192b76a4, org.springframework.security.web.authentication.logout.LogoutFilter@2f3565c0, com.example.employee_management.security.JwtAuthFilter@4f3e9fbb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@706c2726, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75d61b62, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45430a27, org.springframework.security.web.session.SessionManagementFilter@6d514259, org.springframework.security.web.access.ExceptionTranslationFilter@5fb05c07, org.springframework.security.web.access.intercept.AuthorizationFilter@e30a8ef]
+2024-11-25 10:44:36.237 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-25 10:44:36.259 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-25 10:44:36.268 [main] INFO  c.e.e.EmployeeManagementApplication - Started EmployeeManagementApplication in 4.223 seconds (process running for 4.812)
+2024-11-25 10:45:08.256 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25 10:45:08.258 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-25 10:45:08.258 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-11-25 10:45:08.268 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/login
+2024-11-25 10:45:08.350 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 10:45:08.361 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/login
+2024-11-25 10:45:08.501 [http-nio-8080-exec-1] INFO  c.e.e.controller.EmployeeController - Login attempt for email: seema@example.com
+2024-11-25 10:45:08.872 [http-nio-8080-exec-1] INFO  c.e.e.controller.EmployeeController - Successful login for email: seema@example.com
+2024-11-25 10:45:35.944 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/login
+2024-11-25 10:45:35.947 [http-nio-8080-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 10:45:35.947 [http-nio-8080-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/login
+2024-11-25 10:45:35.949 [http-nio-8080-exec-2] INFO  c.e.e.controller.EmployeeController - Login attempt for email: seema@example.co
+2024-11-25 10:45:35.954 [http-nio-8080-exec-2] ERROR c.e.e.controller.EmployeeController - Login failed for email: seema@example.co. Reason: Cannot invoke "com.example.employee_management.entity.Employee.getPassword()" because "employees" is null
+2024-11-25 10:53:41.123 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 10:53:41.125 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-25 10:53:41.130 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-25 10:53:50.823 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-11-25 10:53:50.874 [main] INFO  c.e.e.EmployeeManagementApplication - Starting EmployeeManagementApplication using Java 17.0.13 with PID 11352 (D:\java-spingboot-projects\employee-management\employee-management\build\classes\java\main started by P1357905 in D:\java-spingboot-projects\employee-management\employee-management)
+2024-11-25 10:53:50.874 [main] DEBUG c.e.e.EmployeeManagementApplication - Running with Spring Boot v3.1.5, Spring v6.0.13
+2024-11-25 10:53:50.874 [main] INFO  c.e.e.EmployeeManagementApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-25 10:53:51.561 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-25 10:53:51.612 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+2024-11-25 10:53:52.026 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-11-25 10:53:52.033 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-25 10:53:52.034 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-25 10:53:52.034 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-11-25 10:53:52.114 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-25 10:53:52.115 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1195 ms
+2024-11-25 10:53:52.171 [main] DEBUG c.e.e.security.JwtAuthFilter - Filter 'jwtAuthFilter' configured for use
+2024-11-25 10:53:52.254 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-25 10:53:52.311 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.13.Final
+2024-11-25 10:53:52.314 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-11-25 10:53:52.594 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-25 10:53:52.616 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-25 10:53:52.790 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58cda03f
+2024-11-25 10:53:52.791 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-25 10:53:52.821 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-25 10:53:53.742 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-25 10:53:53.804 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-25 10:53:54.271 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-25 10:53:54.529 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@e30a8ef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2ffaa711, org.springframework.security.web.context.SecurityContextHolderFilter@6d514259, org.springframework.security.web.header.HeaderWriterFilter@18ed9480, org.springframework.security.web.authentication.logout.LogoutFilter@1d0acb8f, com.example.employee_management.security.JwtAuthFilter@5934153e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12d8e6b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@255482cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3abb6aa, org.springframework.security.web.session.SessionManagementFilter@3445ddf2, org.springframework.security.web.access.ExceptionTranslationFilter@6de2344a, org.springframework.security.web.access.intercept.AuthorizationFilter@29811d4d]
+2024-11-25 10:53:54.721 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-25 10:53:54.744 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-25 10:53:54.752 [main] INFO  c.e.e.EmployeeManagementApplication - Started EmployeeManagementApplication in 4.3 seconds (process running for 4.885)
+2024-11-25 10:54:03.476 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-25 10:54:03.477 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-25 10:54:03.478 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-11-25 10:54:03.493 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /api/employees/login
+2024-11-25 10:54:03.572 [http-nio-8080-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2024-11-25 10:54:03.599 [http-nio-8080-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /api/employees/login
+2024-11-25 10:54:03.750 [http-nio-8080-exec-1] INFO  c.e.e.controller.EmployeeController - Login attempt for email: seema@example.co
+2024-11-25 10:54:03.916 [http-nio-8080-exec-1] ERROR c.e.e.controller.EmployeeController - Login failed for email: seema@example.co. Reason: Employee not found with provided email
+2024-11-25 13:06:07.740 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h33m44s284ms311µs700ns).
+2024-11-25 13:24:26.421 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m48s617ms907µs200ns).
+2024-11-25 13:58:59.521 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m2s951ms523µs500ns).
+2024-11-25 14:42:20.090 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m50s272ms512µs400ns).
+2024-11-25 15:41:20.568 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m59s443ms354µs700ns).
+2024-11-25 15:54:27.569 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m6s916ms581µs200ns).
+2024-11-25 16:44:32.279 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m4s165ms262µs300ns).
+2024-11-25 16:59:33.957 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m1s567ms367µs100ns).
+2024-11-25 17:12:12.044 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m8s29ms236µs600ns).
+2024-11-25 20:10:12.533 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h58m488ms838µs100ns).
+2024-11-25 20:29:07.434 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m24s679ms810µs900ns).
+2024-11-25 21:30:52.997 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m14s740ms135µs400ns).
+2024-11-25 22:11:17.970 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s630ms87µs800ns).
+2024-11-25 22:28:43.350 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s104ms474µs700ns).
+2024-11-25 22:44:07.235 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m53s824ms976µs800ns).
+2024-11-25 22:52:07.205 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m59s907ms636µs400ns).
+2024-11-25 23:24:20.184 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m42s553ms471µs600ns).

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.employee_management.service.EmployeeServiceImplTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-11-28T09:32:41" hostname="NCSIN014WSRG3C0" time="0.196">
+  <properties/>
+  <testcase name="getEmployeeById_Success()" classname="com.example.employee_management.service.EmployeeServiceImplTest" time="0.051"/>
+  <testcase name="getAllEmployees_Success()" classname="com.example.employee_management.service.EmployeeServiceImplTest" time="0.016"/>
+  <testcase name="deleteEmployee_Success()" classname="com.example.employee_management.service.EmployeeServiceImplTest" time="0.015"/>
+  <testcase name="getEmployeeById_NotFound()" classname="com.example.employee_management.service.EmployeeServiceImplTest" time="0.012"/>
+  <testcase name="createEmployee_EmailExists()" classname="com.example.employee_management.service.EmployeeServiceImplTest" time="0.01"/>
+  <testcase name="createEmployee_Success()" classname="com.example.employee_management.service.EmployeeServiceImplTest" time="0.023"/>
+  <testcase name="deleteEmployee_NotFound()" classname="com.example.employee_management.service.EmployeeServiceImplTest" time="0.012"/>
+  <system-out><![CDATA[2024-11-28 15:02:41.341 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.employee_management.service.EmployeeServiceImplTest]: EmployeeServiceImplTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-11-28 15:02:41.358 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.employee_management.EmployeeManagementApplication for test class com.example.employee_management.service.EmployeeServiceImplTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

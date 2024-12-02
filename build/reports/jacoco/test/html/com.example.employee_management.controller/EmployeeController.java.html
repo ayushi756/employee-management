@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EmployeeController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">employee-management</a> &gt; <a href="index.source.html" class="el_package">com.example.employee_management.controller</a> &gt; <span class="el_source">EmployeeController.java</span></div><h1>EmployeeController.java</h1><pre class="source lang-java linenums">package com.example.employee_management.controller;
+
+import com.example.employee_management.dto.*;
+import com.example.employee_management.service.EmployeeServices;
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+<span class="fc" id="L17">@Slf4j  // Lombok annotation for logging</span>
+@RestController
+@RequestMapping(&quot;/api/employees&quot;)
+<span class="fc" id="L20">@RequiredArgsConstructor</span>
+public class EmployeeController {
+
+    @Autowired
+    private EmployeeServices employeeServices;
+
+    @PostMapping(&quot;/register&quot;)
+    public ResponseEntity&lt;Employeeresponse&gt; createEmployee(@Valid @RequestBody EmployeeRequest request) {
+<span class="fc" id="L28">        log.info(&quot;Received request to create employee with email: {}&quot;, request.getEmail());</span>
+<span class="fc" id="L29">        Employeeresponse response = employeeServices.createEmployee(request);</span>
+<span class="fc" id="L30">        log.info(&quot;Successfully created employee with ID: {}&quot;, response.getId());</span>
+<span class="fc" id="L31">        return new ResponseEntity&lt;&gt;(response, HttpStatus.CREATED);</span>
+    }
+
+    @PostMapping(&quot;/login&quot;)
+    public ResponseEntity&lt;?&gt; loginEmployee(@Valid @RequestBody LoginRequest loginRequest) throws Exception {
+<span class="fc" id="L36">        log.info(&quot;Login attempt for email: {}&quot;, loginRequest.getEmail());</span>
+        try {
+<span class="fc" id="L38">            LoginResponse obj = employeeServices.login(loginRequest);</span>
+<span class="fc" id="L39">            log.info(&quot;Successful login for email: {}&quot;, loginRequest.getEmail());</span>
+<span class="fc" id="L40">            return ResponseEntity.ok(obj);</span>
+<span class="fc" id="L41">        } catch (Exception e) {</span>
+<span class="fc" id="L42">            log.error(&quot;Login failed for email: {}. Reason: {}&quot;, loginRequest.getEmail(), e.getMessage());</span>
+<span class="fc" id="L43">            return new ResponseEntity&lt;&gt;(e.getMessage(), HttpStatus.UNAUTHORIZED);</span>
+        }
+    }
+
+    @GetMapping(&quot;/{id}&quot;)
+    public ResponseEntity&lt;Employeeresponse&gt; getEmployeeById(@PathVariable Long id) {
+<span class="fc" id="L49">        log.info(&quot;Fetching employee details for ID: {}&quot;, id);</span>
+<span class="fc" id="L50">        Employeeresponse response = employeeServices.getEmployeeById(id);</span>
+<span class="fc" id="L51">        log.info(&quot;Successfully retrieved employee details for ID: {}&quot;, id);</span>
+<span class="fc" id="L52">        return ResponseEntity.ok(response);</span>
+    }
+
+    @GetMapping
+    public ResponseEntity&lt;List&lt;Employeeresponse&gt;&gt; getAllEmployees() {
+<span class="fc" id="L57">        log.info(&quot;Fetching all employees&quot;);</span>
+<span class="fc" id="L58">        List&lt;Employeeresponse&gt; employees = employeeServices.getAllEmployees();</span>
+<span class="fc" id="L59">        log.info(&quot;Successfully retrieved {} employees&quot;, employees.size());</span>
+<span class="fc" id="L60">        return ResponseEntity.ok(employees);</span>
+    }
+
+    @PutMapping(&quot;/{id}&quot;)
+    public ResponseEntity&lt;Employeeresponse&gt; updateEmployee(
+            @PathVariable Long id,
+            @Valid @RequestBody EmployeeRequest request) {
+<span class="fc" id="L67">        log.info(&quot;Updating employee with ID: {}&quot;, id);</span>
+<span class="fc" id="L68">        Employeeresponse response = employeeServices.updateEmployee(id, request);</span>
+<span class="fc" id="L69">        log.info(&quot;Successfully updated employee with ID: {}&quot;, id);</span>
+<span class="fc" id="L70">        return ResponseEntity.ok(response);</span>
+    }
+
+    @DeleteMapping(&quot;/{id}&quot;)
+    public ResponseEntity&lt;String&gt; deleteEmployee(@PathVariable Long id) {
+<span class="fc" id="L75">        log.info(&quot;Deleting employee with ID: {}&quot;, id);</span>
+<span class="fc" id="L76">        employeeServices.deleteEmployee(id);</span>
+<span class="fc" id="L77">        log.info(&quot;Successfully deleted employee with ID: {}&quot;, id);</span>
+<span class="fc" id="L78">        return ResponseEntity.ok(&quot;Employee deleted successfully&quot;);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
